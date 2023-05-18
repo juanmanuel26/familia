@@ -1,29 +1,29 @@
 import axios from "axios";
 
 export const getUsersRequest = async () =>
-  await axios.get(`${import.meta.env.VITE_SERVER_URL}/users/users`);
+  await axios.get(`https://proyectolondo-o-production-2a60.up.railway.app/users/users`);
 
 export const getCitasRequest = async () =>
-  await axios.get(`${import.meta.env.VITE_SERVER_URL}/users/citas/${fecha}`); 
+  await axios.get(`https://proyectolondo-o-production-2a60.up.railway.app/citas/${fecha}`); 
 
 
 export const addUsersRequest = async (user) =>
-  await axios.post(`${import.meta.env.VITE_SERVER_URL}/users/users/add`, user);
+  await axios.post(`https://proyectolondo-o-production-2a60.up.railway.app/users/users/add`, user);
 
 export const addCitasRequest = async (citas) =>
-  await axios.post(`${import.meta.env.VITE_SERVER_URL}/users/addcitas`, citas);
+  await axios.post(`https://proyectolondo-o-production-2a60.up.railway.app/users/addcitas`, citas);
   
 
 
 export const updateUsersRequest = async (user, id) =>
   await axios.put(
-    `${import.meta.env.VITE_SERVER_URL}/users/users/edit/${id}`,
+    `https://$proyectolondo-o-production-2a60.up.railway.app/users/users/edit/${id}`,
     user
   );
 
 export const deleteUsersRequest = async (id) =>
   await axios.delete(
-    `${import.meta.env.VITE_SERVER_URL}/users/users/delete/${id}`
+    `https://proyectolondo-o-production-2a60.up.railway.app/users/users/delete/${id}`
 );
 
 
